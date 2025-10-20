@@ -6,3 +6,5 @@ USER root
 
 RUN touch config/synonyms.txt \
     && touch config/dictionary.txt
+
+USER elasticsearch

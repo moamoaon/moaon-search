@@ -2,6 +2,7 @@ services:
   elastic:
     build:
       context: .
+    container_name: elastic
     ports:
       - "9200:9200"
     environment:
