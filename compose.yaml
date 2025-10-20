@@ -10,7 +10,7 @@ services:
       - xpack.security.http.ssl.enabled=false
       - ES_JAVA_OPTS=-Xms512m -Xmx512m
     volumes:
-      - es-data:/usr/share/elasticsearch/data
+      - es_data:/usr/share/elasticsearch/data
 
   node-exporter:
     image: prom/node-exporter:latest
@@ -26,4 +26,4 @@ services:
       - '/:/host:ro,rslave'
 
 volumes:
-  es-data:
+  es_data:
