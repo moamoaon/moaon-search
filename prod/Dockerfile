@@ -5,6 +5,6 @@ RUN bin/elasticsearch-plugin install --batch analysis-nori
 USER root
 
 COPY dictionary.txt ./config
-COPY synonyms.txt.txt ./config
+COPY synonyms.txt ./config
 
 USER elasticsearch
